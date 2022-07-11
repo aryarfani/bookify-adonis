@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "355d5f6a-69f1-482f-97f1-0e5345b7532c",
+    "name": "bookify-adonis",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2022-07-10T11:40:19.895Z",
+    "modified": "2022-07-10T11:40:47.342Z",
+    "data": [
+      {
+        "name": "vendor_token",
+        "value": "Bearer Mw.tq8wwS-2n2gKiRQnrfgpBipYgBznjnhKP33KQw_PXPDaCO5f7F7NJAMcmixR"
+      }
+    ]
+  }
+]

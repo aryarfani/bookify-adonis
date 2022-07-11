@@ -1,0 +1,332 @@
+[
+  {
+    "_id": "bda306e3-5101-4e4e-a5b7-12806ac176d9",
+    "colId": "29e4c060-98c0-4612-89f8-c6cb80adbcc7",
+    "containerId": "46a98771-b956-4b50-bf0a-25e5d5e7facf",
+    "name": "Register Vendor",
+    "url": "http://127.0.0.1:3333/api/vendors/register",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-07-10T11:39:18.991Z",
+    "modified": "2022-07-10T11:39:18.991Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "Rudi Purnama"
+        },
+        {
+          "name": "email",
+          "value": "rudi@gmail.com"
+        },
+        {
+          "name": "password",
+          "value": "secret123"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "1b7b2680-d25b-46b9-be37-95802671dac5",
+    "colId": "29e4c060-98c0-4612-89f8-c6cb80adbcc7",
+    "containerId": "f907ccd5-7131-4c7b-9863-4fd2e57eef1e",
+    "name": "Get Vendors",
+    "url": "http://127.0.0.1:3333/api/vendors",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-07-10T11:39:18.992Z",
+    "modified": "2022-07-10T11:39:18.992Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "662f6bd4-9400-4751-ba18-3cc835131034",
+    "colId": "29e4c060-98c0-4612-89f8-c6cb80adbcc7",
+    "containerId": "9a50cc0c-8355-4b55-b478-a5d8f71ebdc5",
+    "name": "Get Products",
+    "url": "http://127.0.0.1:3333/api/products",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-07-10T11:39:18.993Z",
+    "modified": "2022-07-10T11:39:18.993Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "{{vendor_token}}"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "6de9203b-8909-4a38-a877-2133c8382e15",
+    "colId": "29e4c060-98c0-4612-89f8-c6cb80adbcc7",
+    "containerId": "9a50cc0c-8355-4b55-b478-a5d8f71ebdc5",
+    "name": "Get Product By Id",
+    "url": "http://127.0.0.1:3333/api/products/4",
+    "method": "GET",
+    "sortNum": 15000,
+    "created": "2022-07-10T11:39:18.994Z",
+    "modified": "2022-07-10T11:39:18.994Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "{{vendor_token}}"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "00e261b4-8726-41b5-acdb-668759e62262",
+    "colId": "29e4c060-98c0-4612-89f8-c6cb80adbcc7",
+    "containerId": "46a98771-b956-4b50-bf0a-25e5d5e7facf",
+    "name": "Update Vendor",
+    "url": "http://127.0.0.1:3333/api/vendors/update",
+    "method": "PUT",
+    "sortNum": 20000,
+    "created": "2022-07-10T11:39:18.995Z",
+    "modified": "2022-07-10T14:48:47.466Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "{{vendor_token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "Rudi Purnanto"
+        },
+        {
+          "name": "email",
+          "value": "rudi@gmail.com"
+        },
+        {
+          "name": "password",
+          "value": "secret123",
+          "isDisabled": true
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer"
+    },
+    "tests": []
+  },
+  {
+    "_id": "1ac56e1c-019f-4c4c-af40-29f314963337",
+    "colId": "29e4c060-98c0-4612-89f8-c6cb80adbcc7",
+    "containerId": "9a50cc0c-8355-4b55-b478-a5d8f71ebdc5",
+    "name": "Create Product",
+    "url": "http://127.0.0.1:3333/api/products",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-07-10T11:39:18.996Z",
+    "modified": "2022-07-10T11:44:34.668Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "{{vendor_token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "Catoraamaa"
+        },
+        {
+          "name": "description",
+          "value": "One of the book ever"
+        },
+        {
+          "name": "stock",
+          "value": "999"
+        },
+        {
+          "name": "price",
+          "value": "125000"
+        }
+      ],
+      "files": [
+        {
+          "name": "image",
+          "value": "..\\..\\..\\..\\..\\..\\Users\\Ary\\Downloads\\FB_IMG_1634685158012.jpg"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "694ca56e-d64f-423c-99d5-a568e7e8d66a",
+    "colId": "29e4c060-98c0-4612-89f8-c6cb80adbcc7",
+    "containerId": "46a98771-b956-4b50-bf0a-25e5d5e7facf",
+    "name": "Login Vendor",
+    "url": "http://127.0.0.1:3333/api/vendors/login",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-07-10T11:39:18.997Z",
+    "modified": "2022-07-10T11:39:18.997Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "email",
+          "value": "rudi@gmail.com"
+        },
+        {
+          "name": "password",
+          "value": "secret123"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "d33bb89e-4cd2-46e6-bbb7-84113efa975d",
+    "colId": "29e4c060-98c0-4612-89f8-c6cb80adbcc7",
+    "containerId": "9a50cc0c-8355-4b55-b478-a5d8f71ebdc5",
+    "name": "Update Product",
+    "url": "http://127.0.0.1:3333/api/products/3",
+    "method": "PUT",
+    "sortNum": 30000,
+    "created": "2022-07-10T11:39:18.998Z",
+    "modified": "2022-07-10T11:39:18.998Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "{{vendor_token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "The Legendary22"
+        },
+        {
+          "name": "description",
+          "value": "One of the book ever"
+        },
+        {
+          "name": "stock",
+          "value": "999"
+        },
+        {
+          "name": "price",
+          "value": "125000"
+        }
+      ],
+      "files": [
+        {
+          "name": "image",
+          "value": "C:\\Users\\Ary\\Pictures\\Lahdang\\olibekas.jpg"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "c5689f1f-7dda-489c-8fde-34ddad0a4eec",
+    "colId": "29e4c060-98c0-4612-89f8-c6cb80adbcc7",
+    "containerId": "9a50cc0c-8355-4b55-b478-a5d8f71ebdc5",
+    "name": "Delete Product",
+    "url": "http://127.0.0.1:3333/api/products/6",
+    "method": "DELETE",
+    "sortNum": 40000,
+    "created": "2022-07-10T11:39:18.999Z",
+    "modified": "2022-07-10T11:47:47.230Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "{{vendor_token}}"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "f18c05ae-2900-4117-9bfc-9a2e0684890e",
+    "colId": "29e4c060-98c0-4612-89f8-c6cb80adbcc7",
+    "containerId": "46a98771-b956-4b50-bf0a-25e5d5e7facf",
+    "name": "Get Me / Current User",
+    "url": "http://127.0.0.1:3333/api/vendors/me",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2022-07-10T11:39:19.000Z",
+    "modified": "2022-07-10T13:50:34.947Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json",
+        "isDisabled": true
+      },
+      {
+        "name": "Authorization",
+        "value": "{{vendor_token}}",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  }
+]

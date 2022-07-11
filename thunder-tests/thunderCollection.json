@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "29e4c060-98c0-4612-89f8-c6cb80adbcc7",
+    "colName": "bookify-adonis",
+    "created": "2022-07-10T11:39:18.986Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "f907ccd5-7131-4c7b-9863-4fd2e57eef1e",
+        "name": "Vendor",
+        "containerId": "",
+        "created": "2022-07-10T11:39:18.988Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "9a50cc0c-8355-4b55-b478-a5d8f71ebdc5",
+        "name": "Product",
+        "containerId": "f907ccd5-7131-4c7b-9863-4fd2e57eef1e",
+        "created": "2022-07-10T11:39:18.989Z",
+        "sortNum": 20000
+      },
+      {
+        "_id": "46a98771-b956-4b50-bf0a-25e5d5e7facf",
+        "name": "Auth",
+        "containerId": "f907ccd5-7131-4c7b-9863-4fd2e57eef1e",
+        "created": "2022-07-10T11:39:18.990Z",
+        "sortNum": 30000
+      }
+    ]
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "_id": "bfe932fa-46ee-4d43-817d-4d59b6998d1f",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:3333/api/products",
+    "url": "http://127.0.0.1:3333/api/products",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-10T11:39:30.559Z",
+    "modified": "2022-07-10T11:47:26.567Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "{{vendor_token}}"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "a89f2e04-fa31-4d3d-bc02-82b05636f83e",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:3333/api/vendors/login",
+    "url": "http://127.0.0.1:3333/api/vendors/login",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-07-10T11:40:34.710Z",
+    "modified": "2022-07-10T11:40:35.042Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "email",
+          "value": "rudi@gmail.com"
+        },
+        {
+          "name": "password",
+          "value": "secret123"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "6d3d5561-648e-4fe6-b4d4-06c4fd70d6d5",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:3333/api/products",
+    "url": "http://127.0.0.1:3333/api/products",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-07-10T11:44:34.188Z",
+    "modified": "2022-07-10T11:47:15.020Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "{{vendor_token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "Catoraamaa"
+        },
+        {
+          "name": "description",
+          "value": "One of the book ever"
+        },
+        {
+          "name": "stock",
+          "value": "999"
+        },
+        {
+          "name": "price",
+          "value": "125000"
+        }
+      ],
+      "files": [
+        {
+          "name": "image",
+          "value": "..\\..\\..\\..\\..\\..\\Users\\Ary\\Downloads\\FB_IMG_1634685158012.jpg"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "af9844f0-788b-4132-865a-e957278c4f83",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:3333/api/products/6",
+    "url": "http://127.0.0.1:3333/api/products/6",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2022-07-10T11:47:47.422Z",
+    "modified": "2022-07-10T11:47:47.478Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "{{vendor_token}}"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "93d2d6cf-eb9f-45cb-a2a3-3cd483590d3b",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:3333/api/vendors/me",
+    "url": "http://127.0.0.1:3333/api/vendors/me",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-10T13:48:24.585Z",
+    "modified": "2022-07-10T13:50:34.958Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json",
+        "isDisabled": true
+      },
+      {
+        "name": "Authorization",
+        "value": "{{vendor_token}}",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "cd5487a8-dd7a-491a-8b16-245146b248b8",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:3333/api/vendors/update",
+    "url": "http://127.0.0.1:3333/api/vendors/update",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-07-10T14:47:44.590Z",
+    "modified": "2022-07-10T14:49:56.204Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "{{vendor_token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "Rudi Purnanto"
+        },
+        {
+          "name": "email",
+          "value": "rudi@gmail.com"
+        },
+        {
+          "name": "password",
+          "value": "secret123",
+          "isDisabled": true
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer"
+    },
+    "tests": []
+  }
+]
